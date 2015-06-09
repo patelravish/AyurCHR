@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="fv.ayurchr.dbobjects.hibernate.Incidence" table="INCIDENCE" entity-name="INCIDENCE">
+        <id name="id" type="long" column="ID">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME"/>
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LASTNAME"/>
+        </property>
+        <property name='UserId' type="long">
+            <column name="UserId"/>
+        </property>
+    	<property name='Temperature' type="java.lang.String">
+            <column name="Temperature"/>
+        </property>
+        <property name='BloodPressure' type="java.lang.String">
+            <column name="BloodPressure"/>
+        </property>
+        <property name='Weight' type="java.lang.String">
+            <column name="Weight"/>
+        </property>
+        <property name='Height' type="java.lang.String">
+            <column name="Height"/>
+        </property>
+        <property name='AppointmentDate' type="java.util.Date">
+            <column name="AppointmentDate"/>
+        </property>
+        <property name='problem_1' type="java.lang.String">
+            <column name="PROBLEM_1"/>
+        </property>
+        <property name="problemId_1" type="long">
+            <column name="PROBLEMID_1"/>
+        </property>
+        <property name='problem_2' type="java.lang.String">
+            <column name="PROBLEM_2"/>
+        </property>
+        <property name="problemId_2" type="long">
+            <column name="PROBLEMID_2"/>
+        </property>
+        <property name='problem_3' type="java.lang.String">
+            <column name="PROBLEM_3"/>
+        </property>
+        <property name="problemId_3" type="long">
+            <column name="PROBLEMID_3"/>
+        </property>
+        <property name='problem_4' type="java.lang.String">
+            <column name="PROBLEM_4"/>
+        </property>
+        <property name="problemId_4" type="long">
+            <column name="PROBLEMID_4"/>
+        </property>
+        <property name='problem_5' type="java.lang.String">
+            <column name="PROBLEM_5"/>
+        </property>
+        <property name="problemId_5" type="long">
+            <column name="PROBLEMID_5"/>
+        </property>
+        <property name='Since_1' type="java.lang.String">
+            <column name="Since_1"/>
+        </property>
+        <property name="Since_2" type="java.lang.String">
+            <column name="Since_2"/>
+        </property>
+        <property name='Since_3' type="java.lang.String">
+            <column name="Since_3"/>
+        </property>
+        <property name="Since_4" type="java.lang.String">
+            <column name="Since_4"/>
+        </property>
+        <property name='Since_5' type="java.lang.String">
+            <column name="Since_5"/>
+        </property>
+        <property name='symptom_1' type="java.lang.String">
+            <column name="SYMPTOM_1"/>
+        </property>
+        <property name="symptomId_1" type="long">
+            <column name="SYMPTOMID_1"/>
+        </property>
+        <property name='symptom_2' type="java.lang.String">
+            <column name="SYMPTOM_2"/>
+        </property>
+        <property name="symptomId_2" type="long">
+            <column name="SYMPTOMID_2"/>
+        </property>
+        <property name='symptom_3' type="java.lang.String">
+            <column name="SYMPTOM_3"/>
+        </property>
+        <property name="symptomId_3" type="long">
+            <column name="SYMPTOMID_3"/>
+        </property>
+        <property name='symptom_4' type="java.lang.String">
+            <column name="SYMPTOM_4"/>
+        </property>
+        <property name="symptomId_4" type="long">
+            <column name="SYMPTOMID_4"/>
+        </property>
+        <property name='symptom_5' type="java.lang.String">
+            <column name="SYMPTOM_5"/>
+        </property>
+        <property name="symptomId_5" type="long">
+            <column name="SYMPTOMID_5"/>
+        </property>
+        <property name='diagnosis_1' type="java.lang.String">
+            <column name="DIAGNOSIS_1"/>
+        </property>
+        <property name="diagnosisId_1" type="long">
+            <column name="DIAGNOSISID_1"/>
+        </property>
+        <property name='diagnosis_2' type="java.lang.String">
+            <column name="DIAGNOSIS_2"/>
+        </property>
+        <property name="diagnosisId_2" type="long">
+            <column name="DIAGNOSISID_2"/>
+        </property>
+        <property name='diagnosis_3' type="java.lang.String">
+            <column name="DIAGNOSIS_3"/>
+        </property>
+        <property name="diagnosisId_3" type="long">
+            <column name="DIAGNOSISID_3"/>
+        </property>
+        <property name='diagnosis_4' type="java.lang.String">
+            <column name="DIAGNOSIS_4"/>
+        </property>
+        <property name="diagnosisId_4" type="long">
+            <column name="DIAGNOSISID_4"/>
+        </property>
+        <property name='diagnosis_5' type="java.lang.String">
+            <column name="DIAGNOSIS_5"/>
+        </property>
+        <property name="diagnosisId_5" type="long">
+            <column name="DIAGNOSISID_5"/>
+        </property>
+        <property name="incidenceDate" type="java.util.Date">
+            <column name="INCIDENCEDATE"/>
+        </property>
+        <property name='medication_1' type="java.lang.String">
+            <column name="MEDICATION_1"/>
+        </property>
+        <property name="medicationId_1" type="long">
+            <column name="MEDICATIONID_1"/>
+        </property>
+        <property name='medication_2' type="java.lang.String">
+            <column name="MEDICATION_2"/>
+        </property>
+        <property name="medicationId_2" type="long">
+            <column name="MEDICATIONID_2"/>
+        </property>
+         <property name='timeId_1' type="java.lang.String">
+            <column name="TIMEID_1"/>
+        </property>
+        <property name='timeId_2' type="java.lang.String">
+            <column name="TIMEID_2"/>
+        </property>
+        <property name="Comment" type="java.lang.String">
+            <column name="COMMENT"/>
+        </property>
+    </class>
+</hibernate-mapping>

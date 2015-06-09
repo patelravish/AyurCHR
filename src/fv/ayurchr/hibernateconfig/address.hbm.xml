@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="fv.ayurchr.dbobjects.hibernate.Address" table="ADDRESS" entity-name="ADDRESS">
+        <id name="id" type="long" column="ADDRESSID">
+        </id>
+
+        <property name="address">
+            <column name="ADDRESS"/>
+        </property>
+        <property name="street">
+            <column name="LASTNAME"/>
+        </property>
+        <property name="area">
+            <column name="AREA"/>
+        </property>
+        <property name="city">
+            <column name="CITY"/>
+        </property>
+        <property name="state">
+            <column name="STATE"/>
+        </property>
+        <property name="areaCode">
+            <column name="AREACODE"/>
+        </property>
+    </class>
+</hibernate-mapping>

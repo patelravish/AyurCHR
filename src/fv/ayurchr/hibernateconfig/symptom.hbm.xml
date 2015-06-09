@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="fv.ayurchr.dbobjects.hibernate.Symptom" table="SYMPTOM" entity-name="SYMPTOM">
+        <id name="id" type="long" column="ID">
+            <generator class="native"/>
+        </id>
+
+        <property name="description">
+            <column name="DESCRIPTION"/>
+        </property>
+        
+         <property name="ProblemId">
+            <column name="ProblemId"/>
+        </property>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project name="AyurEMR" basedir="." default="dist">
+
+	<target name="init">
+		<property name="javac.classpath" value="web/WEB-INF/lib/antlr-2.7.6.jar;web/WEB-INF/lib/c3p0-0.9.1.2-jdk1.3.jar;web/WEB-INF/lib/c3p0-0.9.1.2.jar;web/WEB-INF/lib/c3p0-oracle-thin-extras-0.9.1.2.jar;web/WEB-INF/lib/commons-beanutils-1.7.jar;web/WEB-INF/lib/commons-collections-3.1.jar;web/WEB-INF/lib/commons-collections.jar;web/WEB-INF/lib/commons-lang.jar;web/WEB-INF/lib/commons-logging-1.1.1.jar;web/WEB-INF/lib/cors-filter-1.3.1.jar;web/WEB-INF/lib/dom4j-1.6.1.jar;web/WEB-INF/lib/ezmorph.jar;web/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar;web/WEB-INF/lib/hibernate3.jar;web/WEB-INF/lib/javassist-3.12.0.GA.jar;web/WEB-INF/lib/jdbc2_0-stdext.jar;web/WEB-INF/lib/json-lib-2.2.2-jdk15.jar;web/WEB-INF/lib/jta-1.1.jar;web/WEB-INF/lib/junit-4.9b2.jar;web/WEB-INF/lib/mysql-connector-java-3.0.17-ga-bin.jar;web/WEB-INF/lib/slf4j-api-1.6.1.jar;web/WEB-INF/lib/servlet-api.jar;web/WEB-INF/lib/jsp-api.jar" />
+	
+	</target>
+	
+	
+	<target name="build" depends="init">
+		<mkdir dir="build" />
+		<mkdir dir="build/jar" />
+		<mkdir dir="dist" />
+		
+		<javac srcdir="src" destdir="build/jar" debug="true">
+			<classpath>
+				<path path="${javac.classpath}"/>
+			</classpath>
+		</javac>
+		<copy file="src/hibernate.cfg.xml" todir="build/jar" />
+		<copy todir="build/jar/fv/ayurchr/hibernateconfig" >
+			<fileset dir="src/fv/ayurchr/hibernateconfig"  />
+		</copy>
+
+		<copy todir="build/web" >
+			<fileset dir="web" excludes="WEB-INF/lib/jsp-api.jar,WEB-INF/lib/servlet-api.jar,WEB-INF/classes/**" />
+		</copy>		
+	
+	</target>
+	
+	<target name="dist" depends="build">
+	
+		<delete dir="build/web/WEB-INF/classes" />
+		<delete dir="build/web/js/dojo/1.7" />
+
+		<mkdir dir="build/web/WEB-INF/lib" />
+
+		<jar jarfile="build/web/WEB-INF/lib/ayuremr.jar" compress="true" manifest="conf/MANIFEST.MF">
+            <fileset dir="build/jar" />
+        </jar>
+		
+		<jar jarfile="dist/dr.war" compress="true" manifest="conf/MANIFEST.mf" >
+			<fileset dir="build/web" />
+		</jar>
+		
+	</target>
+	
+	<target name="clean">
+		<delete includeEmptyDirs="true" failonerror="false">
+			<fileset dir="build" />
+			<fileset dir="dist" />
+		</delete>
+	</target>
+	
+</project>

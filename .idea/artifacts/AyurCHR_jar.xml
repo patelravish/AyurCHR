@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="AyurCHR:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AyurCHR_jar</output-path>
+    <root id="root">
+      <element id="archive" name="AyurCHR.jar">
+        <element id="module-output" name="AyurCHR" />
+      </element>
+      <element id="library" level="project" name="lib" />
+    </root>
+  </artifact>
+</component>

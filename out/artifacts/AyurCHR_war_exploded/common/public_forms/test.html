@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script type="text/javascript" src="C:/Users/RavishPatel/Documents/Work/AyurChr/web/js/dojo/1.6.1/dojo/dojo.js"
+            djConfig="parseOnLoad:true"></script>
+    <link rel="stylesheet" type="text/css"
+          href="C://Users/RavishPatel/Documents/Work/AyurChr/web/js/dojo/1.6.1/dijit/themes/claro/claro.css"/>
+    <link rel="stylesheet" type="text/css" href="C://Users/RavishPatel/Documents/Work/AyurChr/web/css/dojo_custom.css"/>
+
+</head>
+<body class="claro">
+<script type="text/javascript">
+    dojo.require("dijit.layout.AccordionContainer");
+    dojo.require("dijit.form.Button");
+</script>
+<script type="text/javascript">
+    var i = 10;
+</script>
+
+<script type="text/javascript">
+    dojo.require("dijit.layout.AccordionContainer");
+    dojo.require("dijit.layout.ContentPane");
+    var aContainer;
+    dojo.addOnLoad(function() {
+        aContainer = new dijit.layout.AccordionContainer({
+                    style: "height: 100%"
+                },
+                "markup");
+        aContainer.addChild(new dijit.layout.ContentPane({
+            title: "This too",
+            content: "Hello im fine.. thnx"
+        }));
+
+        aContainer.addChild(new dijit.layout.ContentPane({
+            title: 'check',
+            content: dojo.byId('newform').innerHTML
+        }));
+        aContainer.startup();
+    });
+</script>
+
+
+<div id="markup" style="width:300px; height: 100%">
+</div>
+<div id='newform' style="float: right;">
+    <input type="button" value='Save' id='savebutton'/>
+    <script type="text/javascript">
+        var ipn;
+        function onbtclick() {
+
+            var ipn = new dijit.layout.ContentPane({
+                title: "This is a content pane",
+                content: dojo.byId('newform').innerHTML,
+                selected:"true"
+
+            });
+            aContainer.addChild(ipn);
+
+            //aContainer.selectChild(ipn);
+            ipn.startup();
+            dojo.byId('savebutton').id = i + '_btn';
+            dojo.connect(dojo.byId(i + '_btn'), 'onclick', onbtclick);
+            i = i + 1;
+        }
+
+    </script>
+</div>
+</body>
+</html>

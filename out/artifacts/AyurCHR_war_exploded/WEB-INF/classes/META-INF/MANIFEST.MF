@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: c3p0-0.9.1.2-jdk1.3.jar antlr-2.7.6.jar commons-collection
+ s-3.1.jar c3p0-oracle-thin-extras-0.9.1.2.jar commons-beanutils-1.7.j
+ ar javassist-3.12.0.GA.jar dom4j-1.6.1.jar junit-4.9b2.jar c3p0-0.9.1
+ .2.jar commons-collections.jar mysql-connector-java-3.0.17-ga-bin.jar
+  jta-1.1.jar hibernate-jpa-2.0-api-1.0.0.Final.jar jdbc2_0-stdext.jar
+  hibernate3.jar commons-lang.jar slf4j-api-1.6.1.jar json-lib-2.2.2-j
+ dk15.jar ezmorph.jar cors-filter-1.3.1.jar commons-logging-1.1.1.jar
+Main-Class: 
+

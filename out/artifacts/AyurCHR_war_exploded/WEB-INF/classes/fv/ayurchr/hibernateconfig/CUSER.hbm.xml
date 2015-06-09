@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="fv.ayurchr.dbobjects.hibernate.User" table="USER" entity-name="CUSER">
+        <id name="id" type="long" column="ID">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstName">
+            <column name="FIRSTNAME"/>
+        </property>
+        <property name="middleName">
+            <column name="MIDDLENAME"/>
+        </property>
+        <property name="lastName">
+            <column name="LASTNAME"/>
+        </property>
+        <property name="type">
+            <column name="TYPE"/>
+        </property>
+        <many-to-one entity-name="ROLE" name="role" cascade="all" not-null="true">
+            <column name="ROLEID"/>
+        </many-to-one>
+        <!--
+        <many-to-one entity-name="ADDRESS" name="address" cascade="all" not-null="true">
+                <column name="ADDRESSID"/>
+        </many-to-one>-->
+    </class>
+</hibernate-mapping>

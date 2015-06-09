@@ -1,0 +1,73 @@
+<FORM>
+    <script/>
+    <ENTITY>
+        USER
+    </ENTITY>
+    <CLASS>
+        fv.ayurchr.dbobjects.hibernate.User
+    </CLASS>
+    <FORM_FIELDS>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>PatientId</LABEL>
+            <ID>PatientId</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Identification</LABEL>
+            <ID>Identification</ID>
+            <REQUIRED>false</REQUIRED>
+            <INNERHTML>disabled</INNERHTML>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>First Name</LABEL>
+            <ID>FirstName</ID>
+            <REQUIRED>true</REQUIRED>
+            <INNERHTML>disabled</INNERHTML>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Middle Name</LABEL>
+            <ID>MiddleName</ID>
+            <REQUIRED>true</REQUIRED>
+            <INNERHTML>disabled</INNERHTML>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Last Name</LABEL>
+            <ID>LastName</ID>
+            <REQUIRED>true</REQUIRED>
+            <INNERHTML>disabled</INNERHTML>
+        </FIELD>
+        <FIELD type=''>
+            <TYPE>DATEBOX</TYPE>
+            <LABEL>Incidence Date</LABEL>
+            <ID>IncidenceDate</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL></LABEL>
+            <ID>Problem_1</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type=''>
+            <TYPE>COMBOBOX</TYPE>
+            <LABEL>Symptom</LABEL>
+            <ID>ProblemId_1</ID>
+            <CLASS>fv.ayurchr.dbobjects.hibernate.Symptom</CLASS>
+            <ENTITY>SYMPTOM</ENTITY>
+            <FILTER_VALUE>Id</FILTER_VALUE>
+            <DISPLAY_VALUE>Description</DISPLAY_VALUE>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Diagnosis</LABEL>
+            <ID>Diagnosis</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+    </FORM_FIELDS>
+</FORM>

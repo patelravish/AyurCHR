@@ -1,0 +1,112 @@
+<FORM>
+    <script/>
+    <ENTITY>
+        USER
+    </ENTITY>
+    <CLASS>
+        fv.ayurchr.dbobjects.hibernate.Patient
+    </CLASS>
+    <FORM_FIELDS>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>First Name</LABEL>
+            <ID>FirstName</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Middle Name</LABEL>
+            <ID>MiddleName</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Last Name</LABEL>
+            <ID>LastName</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Birth Mark</LABEL>
+            <ID>Identification</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type=''>
+            <TYPE>DATEBOX</TYPE>
+            <LABEL>Birth Date</LABEL>
+            <ID>DateOfBirth</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type=''>
+            <TYPE>COMBOBOX</TYPE>
+            <LABEL>Role Name</LABEL>
+            <ID>RoleId</ID>
+            <CLASS>fv.ayurchr.dbobjects.hibernate.Role</CLASS>
+            <ENTITY>ROLE</ENTITY>
+            <FILTER_VALUE>Id</FILTER_VALUE>
+            <DISPLAY_VALUE>RoleName</DISPLAY_VALUE>
+            <READONLY>true</READONLY>
+            <VALUE>6</VALUE>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Street</LABEL>
+            <ID>Address_Street</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>House No.</LABEL>
+            <ID>Address_HouseNo</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Community</LABEL>
+            <ID>Address_Community</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+       <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>City</LABEL>
+            <ID>Address_City</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>District</LABEL>
+            <ID>Address_District</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>State</LABEL>
+            <ID>Address_State</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Pincode</LABEL>
+            <ID>Address_PinCode</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Country</LABEL>
+            <ID>Address_Country</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Phone No.</LABEL>
+            <ID>PhoneNumber</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+        <FIELD type='TEXTBOX'>
+            <TYPE>TEXTBOX</TYPE>
+            <LABEL>Emergency Phone No.</LABEL>
+            <ID>PhoneNumber_Emergency</ID>
+            <REQUIRED>true</REQUIRED>
+        </FIELD>
+    </FORM_FIELDS>
+</FORM>

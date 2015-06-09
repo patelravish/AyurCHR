@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="fv.ayurchr.dbobjects.hibernate.Allergy" table="ALLERGY" entity-name="ALLERGY">
+        <id name="id" type="long" column="ID">
+            <generator class="native"/>
+        </id>
+        <property name="userId" type="long">
+            <column name="USERID"/>
+        </property>
+        <property name="startDate" type="java.util.Date">
+            <column name="START_DATE"/>
+        </property>
+        <property name="endDate" type="java.util.Date">
+            <column name="END_DATE"/>
+        </property>
+        <property name="reaction" type="java.lang.String">
+            <column name="REACTION"/>
+        </property>
+        <property name="allergyType" type="java.lang.String">
+            <column name="ALLERGYTYPE"/>
+        </property>
+        <property name="severity" type="java.lang.String">
+            <column name="SEVERITY"/>
+        </property>
+        <property name='medication' type="java.lang.String">
+            <column name="MEDICATION"/>
+        </property>
+        <property name='comments' type="java.lang.String">
+            <column name="COMMENTS"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="fv.ayurchr.dbobjects.hibernate.IncidenceAttribsView" table="INCIDENCE_VIEW" entity-name="INCIDENCEATTRIBSVIEW">
+    
+ 		<id name="id" type="long" column="ID">
+            <generator class="native"/>
+        </id>
+
+        <property name="attributeName" type="java.lang.String">
+            <column name="ATTRIBUTE_NAME"/>
+        </property>
+        
+        <property name='attributeDesc' type="java.lang.String">
+            <column name="ATTRIBUTE_DESC"/>
+        </property>
+        
+        <property name="dataTypeId" type="long">
+            <column name="DATATYPE_ID"/>
+        </property>
+        
+        <property name='classId' type="long">
+            <column name="CLASS_ID"/>
+        </property>
+        
+        <property name='classDesc' type="java.lang.String">
+            <column name="CLASS_DESC"/>
+        </property>
+        
+        <property name="attributeType" type="java.lang.String">
+            <column name="ATTRIBUTE_TYPE"/>
+        </property>
+
+    </class>
+</hibernate-mapping>
